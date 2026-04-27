@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    /* Studio Dentista: Blue #4648ff, Green #7fb069, Off-white #f7f4e4, Black #202020 */
+    --background: 48 52% 93%;
+    --foreground: 0 0% 13%;
+    --card: 48 45% 96%;
+    --card-foreground: 0 0% 13%;
+    --popover: 48 45% 96%;
+    --popover-foreground: 0 0% 13%;
+    --primary: 239 100% 64%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 48 30% 88%;
+    --secondary-foreground: 0 0% 16%;
+    --muted: 48 20% 90%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 48 30% 85%;
+    --accent-foreground: 0 0% 13%;
+    --destructive: 0 65% 50%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 48 18% 82%;
+    --input: 48 20% 86%;
+    --ring: 239 100% 64%;
+    --chart-1: 239 100% 64%;
+    --chart-2: 100 30% 55%;
+    --chart-3: 0 0% 20%;
+    --chart-4: 48 40% 70%;
+    --chart-5: 239 60% 50%;
+    --radius: 0.75rem;
+    --sidebar-background: 0 0% 13%;
+    --sidebar-foreground: 48 40% 92%;
+    --sidebar-primary: 239 100% 64%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 18%;
+    --sidebar-accent-foreground: 48 40% 92%;
+    --sidebar-border: 0 0% 22%;
+    --sidebar-ring: 239 100% 64%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
